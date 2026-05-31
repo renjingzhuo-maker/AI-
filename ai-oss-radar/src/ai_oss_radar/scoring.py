@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 import math
 
 from .models import Repository, RepositoryScore, ScoredRepository
@@ -25,8 +25,8 @@ def parse_timestamp(value: str | None) -> datetime | None:
     except ValueError:
         return None
     if parsed.tzinfo is None:
-        return parsed.replace(tzinfo=UTC)
-    return parsed.astimezone(UTC)
+        return parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
 
 
 def recency_score(value: str | None, now: datetime, half_life_days: int) -> float:
@@ -49,11 +49,11 @@ def score_repository(
     repository: Repository, now: datetime | None = None
 ) -> RepositoryScore:
     if now is None:
-        now = datetime.now(tz=UTC)
+        now = datetime.now(tz=timezone.utc)
     elif now.tzinfo is None:
-        now = now.replace(tzinfo=UTC)
+        now = now.replace(tzinfo=timezone.utc)
     else:
-        now = now.astimezone(UTC)
+        now = now.astimezone(timezone.utc)
 
     usage = 100 * (
         log_score(repository.stars, 80_000) * 0.55

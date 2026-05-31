@@ -1,11 +1,11 @@
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 import unittest
 
 from ai_oss_radar.models import Repository
 from ai_oss_radar.scoring import rank_repositories, score_repository
 
 
-NOW = datetime(2026, 5, 31, tzinfo=UTC)
+NOW = datetime(2026, 5, 31, tzinfo=timezone.utc)
 
 
 class ScoringTests(unittest.TestCase):
