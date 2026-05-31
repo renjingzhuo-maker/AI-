@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-oss-radar"
+version = "0.1.0"
+description = "Rank AI GitHub repositories by adoption, ecosystem importance, and activity."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "AI OSS Radar contributors" }
+]
+keywords = ["ai", "github", "open-source", "llm", "ranking", "cli"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/your-org/ai-oss-radar"
+Issues = "https://github.com/your-org/ai-oss-radar/issues"
+
+[project.scripts]
+ai-oss-radar = "ai_oss_radar.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_oss_radar"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

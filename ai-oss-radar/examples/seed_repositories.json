@@ -1,0 +1,48 @@
+[
+  {
+    "full_name": "huggingface/transformers",
+    "description": "State-of-the-art machine learning for PyTorch, TensorFlow, and JAX.",
+    "html_url": "https://github.com/huggingface/transformers",
+    "stars": 145000,
+    "forks": 29000,
+    "watchers": 145000,
+    "open_issues": 1600,
+    "topics": ["nlp", "transformers", "pytorch", "tensorflow", "machine-learning", "llm"],
+    "license_name": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-05-15T12:00:00Z",
+    "updated_at": "2026-05-20T12:00:00Z",
+    "owner_type": "Organization"
+  },
+  {
+    "full_name": "langchain-ai/langchain",
+    "description": "Build context-aware reasoning applications.",
+    "html_url": "https://github.com/langchain-ai/langchain",
+    "stars": 112000,
+    "forks": 18000,
+    "watchers": 112000,
+    "open_issues": 900,
+    "topics": ["agents", "llm", "rag", "ai", "python", "javascript"],
+    "license_name": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-05-18T12:00:00Z",
+    "updated_at": "2026-05-22T12:00:00Z",
+    "owner_type": "Organization"
+  },
+  {
+    "full_name": "example-labs/archived-ai-demo",
+    "description": "Archived demo repository used to test the activity penalty.",
+    "html_url": "https://github.com/example-labs/archived-ai-demo",
+    "stars": 9000,
+    "forks": 600,
+    "watchers": 9000,
+    "open_issues": 200,
+    "topics": ["ai"],
+    "license_name": null,
+    "language": "Python",
+    "pushed_at": "2022-02-01T12:00:00Z",
+    "updated_at": "2022-02-02T12:00:00Z",
+    "archived": true,
+    "owner_type": "Organization"
+  }
+]
