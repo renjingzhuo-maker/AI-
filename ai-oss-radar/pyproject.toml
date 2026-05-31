@@ -27,8 +27,8 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/your-org/ai-oss-radar"
-Issues = "https://github.com/your-org/ai-oss-radar/issues"
+Homepage = "https://github.com/renjingzhuo-maker/AI-/tree/main/ai-oss-radar"
+Issues = "https://github.com/renjingzhuo-maker/AI-/issues"
 
 [project.scripts]
 ai-oss-radar = "ai_oss_radar.cli:main"
